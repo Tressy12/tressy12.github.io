@@ -1,0 +1,19 @@
+<form action="purchase.php" method="post">
+    <label for="product_name">Product name:</label>
+    <input type="text" id="product_name" name="product_name"><br>
+  
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+  
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" readonly value="10"><br>
+  
+    <label for="payment_method">Payment method:</label>
+    <select id="payment_method" name="payment_method">
+      <option value="credit_card">Credit card</option>
+      <option value="paypal">PayPal</option>
+      <option value="bank_transfer">Bank transfer</option>
+    </select><br>
+  
+    <input type="submit" value="Purchase">
+  </form>

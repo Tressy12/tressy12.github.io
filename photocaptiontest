@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Photo</title>
+</head>
+<body>
+	<figure>
+		<img src="mcfclogo.png" alt="My Photo" width="400" height="300">
+		<figcaption>A beautiful sunset at the beach</figcaption>
+	</figure>
+</body>
+</html>

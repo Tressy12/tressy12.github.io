@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        leave this text as the default black
+    </head>
+    <body>
+        <style>
+            .selected p {
+                color: violet;
+            }
+        </style>
+        <li><div class="selected"><p>make the text for list items 1 and 2 violet using a descendant selector</p></div></li>
+        <li><div class="selected"><p>make the text for list items 1 and 2 violet using a descendant selector</p></div></li>
+        <style>
+            .selected2 p {
+                color: red;
+            }
+        </style>
+        <div class="selected2"><p>make this text red using a child selector</p></div>
+        <style>
+            .selected3 p {
+                color: blue;
+            }
+        </style>
+        <div class="selected3"><p>make this text blue using an adjacent selector</p></div> 
+        <style>
+            .selected4 p {
+                color: orange;
+            }
+        </style>
+        <ul><div class="selected4"><p>make this text orange using a general sibling selector; and this phrase pink by combining 2 types of selectors</p></div></ul>
+    </body>
+</html>

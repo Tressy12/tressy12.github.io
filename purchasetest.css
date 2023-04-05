@@ -1,0 +1,51 @@
+.purchase-option {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.purchase-option h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.purchase-option .price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.purchase-option form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.purchase-option label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.purchase-option input[type="number"] {
+  font-size: 18px;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.purchase-option button[type="submit"] {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.purchase-option button[type="submit"]:hover {
+  background-color: #00796b;
+}

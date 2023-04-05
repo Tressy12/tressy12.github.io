@@ -1,0 +1,42 @@
+* {
+    outline: 1px dotted lime;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: lightblue;
+    color: white;
+    height: 100px;
+    border-bottom: 6px solid #4B4E61;
+}
+
+.nav {
+    grid-template-columns: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 950px;
+}
+
+.logo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.links {
+    margin-top: 20px;
+    font-size: .75rem;
+    text-align: center;
+    color: maroon;
+}
+
+.links a {
+    color: maroon;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
