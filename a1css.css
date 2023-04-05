@@ -59,7 +59,7 @@ body {
     font-size: 1.1em;
     line-height: 2em;
     margin: auto;
-    max-width: 950px;
+    max-width: 80%;
 }
 
 #accolades_container h1 {
@@ -107,7 +107,7 @@ body {
 
 #players .centered {
     margin: auto;
-    max-width: 950px;
+    max-width: 80%;
 }
 
 #players #gallery {
@@ -135,7 +135,7 @@ body {
 
 #about .centered {
     margin: auto;
-    max-width: 950px;
+    max-width: 80%;
 }
 
 #about #profiles {
@@ -174,7 +174,7 @@ body {
 
 #history .centered {
     margin: auto;
-    max-width: 950px;
+    max-width: 80%;
 }
 
 #history #profiles {
@@ -211,7 +211,7 @@ body {
 
 #buy .centered {
     margin: auto;
-    max-width: 950px;
+    max-width: 80%;
 }
 
 #buy form {
@@ -255,7 +255,7 @@ body {
 #footer .centered {
     display: grid;
     grid-template-columns: 65% auto;
-    max-width: 950px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -338,7 +338,7 @@ body {
 
 #fixtures .centered {
     margin: auto;
-    max-width: 1200px;
+    max-width: 80%;
 }
 
 #fixtures #profiles {
