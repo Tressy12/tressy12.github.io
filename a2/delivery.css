@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    /* Header styles */
+  }
+  
+  nav {
+    /* Navigation menu styles */
+  }
+  
+  .delivery-section {
+    padding: 20px;
+  }
+  
+  .delivery-section h2 {
+    font-size: 24px;
+  }
+  
+  .delivery-section p {
+    margin-bottom: 10px;
+  }
+  
+  .delivery-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .delivery-section li {
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    /* Footer styles */
+  }
+  
