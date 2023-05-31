@@ -15,45 +15,75 @@ body {
     text-align: center;
     color: #EB2016;
     font-family: 'LPS', Arial, sans-serif;
-    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
   }
   
   .header-images {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
   }
   
   .header-images img {
     max-width: 150px;
-    margin: 0 100px;
+    margin: 0 10px;
   }
+  
+  h1.display-4 {
+    margin: 0;
+    padding-top: 5%;
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 767px) {
+    .header-images img:nth-child(1) {
+      display: none;
+    }
+  }  
 
-nav {
-  background-color: #469DD6;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-top: 5px solid #1D4C9F;
-  border-bottom: 5px solid #1D4C9F;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 50px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
+  nav {
+    background-color: #469DD6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 5px solid #1D4C9F;
+    border-bottom: 5px solid #1D4C9F;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 767px) {
+    nav ul {
+      flex-direction: column;
+      gap: -5px; /* Added gap for spacing between vertical navigation items */
+    }
+    
+    nav ul li {
+      display: block;
+      margin-right: 0;
+    }
+  }
 
 .menu-section {
     display: flex;
@@ -94,17 +124,17 @@ nav ul li a {
   }
 
  .featured-products {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center the products horizontally */
   padding: 20px;
   background-color: #f2d70d;
 }
 
 .product {
-  display: flex; /* change this to align images to left or above */
+  display: flex;
   align-items: center;
   margin-bottom: 40px;
-  margin-left: 30%; /* change margin left or text align */
 }
 
 .product img {
@@ -119,6 +149,7 @@ nav ul li a {
 .product h3 {
   font-size: 20px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .product p {
@@ -139,23 +170,43 @@ nav ul li a {
 }
 
 .product-list {
-    background-color: #f2d70d;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  background-color: #f2d70d;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .product img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .product-details {
+    width: 100%;
+  }
+}
 
   .address-section {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the content horizontally */
     align-items: center;
     padding: 20px;
     background-color: white;
     border-bottom: 5px solid #1D4C9F;
   }
   
-  .address-form {
-    width: 40%;
-    padding: 0 100px; /* Add left and right padding */
+  .address-form,
+  .shipping-code {
+    width: 100%; /* Take full width on smaller screens */
+    max-width: 400px; /* Limit the maximum width */
+    padding: 0 20px; /* Add left and right padding */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
   }
   
   .address-form h2 {
@@ -186,15 +237,10 @@ nav ul li a {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }  
+  }
   
   .address-form button:hover {
     background-color: #1C4C9D;
-  }
-  
-  .shipping-code {
-    width: 40%;
-    padding: 0 100px; /* Add left and right padding */
   }
   
   .shipping-code h3 {
@@ -205,7 +251,7 @@ nav ul li a {
   .shipping-code p {
     font-size: 20px;
     margin-bottom: 10px;
-  }
+  }  
   
   .price {
     font-weight: bold;
@@ -215,25 +261,24 @@ nav ul li a {
 
   .about-section {
     background-color: #f2d70d;
-    padding: 20px; /* Add some padding to the about section */
+    padding: 20px;
     line-height: 2;
   }
   
   .about-section h2 {
     text-align: center;
-    /* Styles for the heading in the about section */
   }
   
   .about-section p {
     padding: 20px;
     text-align: center;
-    /* Styles for the paragraphs in the about section */
   }
-
+  
   .founders-section {
     display: flex;
     justify-content: center;
     background-color: #f2d70d;
+    flex-wrap: wrap; /* Allow founders to wrap on smaller screens */
   }
   
   .founder {
@@ -244,10 +289,9 @@ nav ul li a {
   }
   
   .founder img {
-    max-width: 80%;
-    height: 50%;
-    object-fit: cover;
-  }
+    max-width: 100%;
+    height: auto;
+  }  
   
   .caption {
     margin-top: 10px;
@@ -259,19 +303,27 @@ nav ul li a {
   
   .caption p {
     font-size: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    .founder:nth-child(2) {
+      display: none; /* Hide the second founder on mobile screens */
+    }
   }  
 
   .find-store {
     background-color: #f2d70d;
     padding: 40px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding-left: 5%;
   }
   
   .store-info {
-    width: 50%;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   .store-info h2 {
@@ -286,7 +338,8 @@ nav ul li a {
   
   .location-form input[type="text"] {
     padding: 10px;
-    width: 70%;
+    width: 100%;
+    max-width: 400px;
   }
   
   .location-form button {
@@ -296,19 +349,15 @@ nav ul li a {
     border: none;
     cursor: pointer;
   }
-
+  
   .location-form button:hover {
     background-color: #1C4C9D;
   }
   
   .map-container {
-    width: 50%;
+    width: 100%;
+    max-width: 800px;
     text-align: center;
-  }
-  
-  .map-container img {
-    max-width: 100%;
-    height: auto;
   }  
 
 footer {
